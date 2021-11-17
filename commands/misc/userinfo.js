@@ -25,9 +25,7 @@ module.exports = {
     const user = client.users.cache.get(member);
 
     interaction.reply({
-      content: `Name: ${user.username}, ID: ${
-        user.id
-      }, Avatar: ${user.displayAvatarURL({ dynamic: true })}`,
+      content: `Name: ${user.username}, Avatar: ${user.displayAvatarURL({ dynamic: true })}`,
       ephemeral: true,
     });
   },
